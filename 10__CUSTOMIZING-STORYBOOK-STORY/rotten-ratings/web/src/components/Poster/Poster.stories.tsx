@@ -13,13 +13,18 @@
 
 import type { ComponentMeta } from '@storybook/react'
 
+import hocusPocus from './images/hocus-pocus.jpeg'
 import { Poster } from './Poster'
-
-export const generated = () => {
-  return <Poster />
-}
 
 export default {
   title: 'Components/Poster',
   component: Poster,
 } as ComponentMeta<typeof Poster>
+
+const Template = (args) => <Poster {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  src: hocusPocus,
+  alt: 'Hocus Pocus',
+}

@@ -1,4 +1,9 @@
-const Poster = ({ alt, src }) => {
+interface Props {
+  alt: string
+  src: string
+}
+
+const Poster = ({ alt, src }: Props) => {
   return (
     <div>
       <img
