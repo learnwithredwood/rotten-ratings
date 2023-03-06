@@ -1,4 +1,4 @@
-import { render } from '@redwoodjs/testing/web'
+import { render, screen } from '@redwoodjs/testing/web'
 
 import { Poster } from './Poster'
 
@@ -7,8 +7,24 @@ import { Poster } from './Poster'
 
 describe('Poster', () => {
   it('renders successfully', () => {
+    const source = './images/hocus-pocus.jpeg'
+    const alt = 'Hocus Pocus'
     expect(() => {
-      render(<Poster />)
+      render(<Poster alt={alt} src={source} />)
     }).not.toThrow()
+  })
+
+  it('shows the image', () => {
+    const source = './images/hocus-pocus.jpeg'
+    const alt = 'Hocus Pocus'
+    render(<Poster alt={alt} src={source} />)
+    expect(screen.getByRole('img')).toHaveAttribute('src', source)
+  })
+
+  it('loads the alt text', () => {
+    const source = './images/hocus-pocus.jpeg'
+    const alt = 'Hocus Pocus'
+    render(<Poster alt={alt} src={source} />)
+    expect(screen.getByRole('img')).toHaveAttribute('alt', alt)
   })
 })
