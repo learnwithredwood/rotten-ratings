@@ -28,3 +28,33 @@ Primary.args = {
   src: hocusPocus,
   alt: 'Hocus Pocus',
 }
+
+export const Large = Template.bind({})
+Large.args = {
+  src: hocusPocus,
+  alt: 'Hocus Pocus',
+  size: 'large',
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  src: hocusPocus,
+  alt: 'Hocus Pocus',
+  size: 'medium',
+}
+
+export const Small = Template.bind({})
+Small.args = {
+  src: hocusPocus,
+  alt: 'Hocus Pocus',
+  size: 'small',
+}
+
+export const WithText = Template.bind({})
+WithText.args = {
+  src: hocusPocus,
+  alt: 'Hocus Pocus',
+  size: 'large',
+  heading: 'My Heading',
+  subheading: 'My Subheading',
+}
