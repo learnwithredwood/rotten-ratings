@@ -20,6 +20,7 @@ const Percentage = ({
 
   return (
     <div
+      data-testid="percentageWrapper"
       className={`relative inline-block
       ${percentage <= 50 && 'text-oriolesOrange'}
       ${50 < percentage && percentage < 70 && 'text-lemonLime'}
@@ -28,6 +29,7 @@ const Percentage = ({
     >
       {ring && (
         <svg
+          data-testid="ring"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/svg"
           width={ringSizes[size]}
@@ -43,6 +45,7 @@ const Percentage = ({
             stroke="#393939"
           />
           <circle
+            data-testid="percentageRing"
             cx="115"
             cy="115"
             r="100"
