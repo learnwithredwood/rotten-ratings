@@ -5,6 +5,7 @@ interface ShowProps {
 const Show = ({ size = 24 }: ShowProps) => {
   return (
     <svg
+      data-testid="ShowIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

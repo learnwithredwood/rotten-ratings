@@ -5,6 +5,7 @@ interface CloseProps {
 const Close = ({ size = 24 }: CloseProps) => {
   return (
     <svg
+      data-testid="CloseIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

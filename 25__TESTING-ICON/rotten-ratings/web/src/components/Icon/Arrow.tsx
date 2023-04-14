@@ -5,6 +5,7 @@ interface ArrowProps {
 const Arrow = ({ size = 24 }: ArrowProps) => {
   return (
     <svg
+      data-testid="ArrowIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

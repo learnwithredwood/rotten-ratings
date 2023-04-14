@@ -5,6 +5,7 @@ interface AddListProps {
 const AddList = ({ size = 24 }: AddListProps) => {
   return (
     <svg
+      data-testid="AddListIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

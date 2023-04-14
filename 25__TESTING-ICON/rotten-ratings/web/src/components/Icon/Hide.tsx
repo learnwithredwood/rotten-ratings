@@ -5,6 +5,7 @@ interface HideProps {
 const Hide = ({ size = 24 }: HideProps) => {
   return (
     <svg
+      data-testid="HideIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

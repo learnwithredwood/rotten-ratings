@@ -5,6 +5,7 @@ interface WatchLaterProps {
 const WatchLater = ({ size = 24 }: WatchLaterProps) => {
   return (
     <svg
+      data-testid="WatchLaterIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

@@ -5,6 +5,7 @@ interface BookmarkProps {
 const Bookmark = ({ size = 24 }: BookmarkProps) => {
   return (
     <svg
+      data-testid="BookmarkIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

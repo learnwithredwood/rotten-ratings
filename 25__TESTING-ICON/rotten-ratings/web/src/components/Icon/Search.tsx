@@ -5,6 +5,7 @@ interface SearchProps {
 const Search = ({ size = 24 }: SearchProps) => {
   return (
     <svg
+      data-testid="SearchIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"

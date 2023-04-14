@@ -5,6 +5,7 @@ interface StarProps {
 const Star = ({ size = 24 }: StarProps) => {
   return (
     <svg
+      data-testid="StarIcon"
       width={size}
       height={size}
       viewBox="0 0 24 24"
