@@ -25,6 +25,7 @@ const Slide = ({ image, percentage, title }: SlideProps) => {
   return (
     <div
       className="min-h-[425px] w-full rounded-[40px] bg-cover bg-centerCenter pl-12 pt-12"
+      data-testid="slide"
       style={{
         backgroundImage: `linear-gradient(90deg, #000000 6.62%, rgba(0, 0, 0, 0) 71.78%), url(${image})`,
       }}
