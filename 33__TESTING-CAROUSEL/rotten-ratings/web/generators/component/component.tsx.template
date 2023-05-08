@@ -1,0 +1,14 @@
+interface ${pascalName}Props {
+  // Props
+}
+
+const ${pascalName} = ({}: ${pascalName}Props) => {
+  return (
+    <div>
+      <h2>{'${pascalName}'}</h2>
+      <p>{'Find me in ${outputPath}'}</p>
+    </div>
+  )
+}
+
+export { ${pascalName}, ${pascalName}Props }
