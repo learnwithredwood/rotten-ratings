@@ -41,6 +41,13 @@ describe('Icon', () => {
     expect(icon).toMatchSnapshot()
   })
 
+  it('renders to Hamburger icon', () => {
+    render(<Icon name="Hamburger" />)
+    const icon = screen.getByTestId('HamburgerIcon')
+    expect(icon).toBeInTheDocument()
+    expect(icon).toMatchSnapshot()
+  })
+
   it('renders to Hide icon', () => {
     render(<Icon name="Hide" />)
     const icon = screen.getByTestId('HideIcon')

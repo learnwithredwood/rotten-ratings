@@ -26,6 +26,11 @@ Close.args = {
   name: 'close',
 }
 
+export const Hamburger = Template.bind({})
+Hamburger.args = {
+  name: 'hamburger',
+}
+
 export const Hide = Template.bind({})
 Hide.args = {
   name: 'hide',

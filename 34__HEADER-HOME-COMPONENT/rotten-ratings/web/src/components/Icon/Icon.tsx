@@ -2,6 +2,7 @@ import { AddList } from './AddList'
 import { Arrow } from './Arrow'
 import { Bookmark } from './Bookmark'
 import { Close } from './Close'
+import { Hamburger } from './Hamburger'
 import { Hide } from './Hide'
 import { Search } from './Search'
 import { Show } from './Show'
@@ -23,6 +24,8 @@ const Icon = ({ name, size = 24 }: IconProps) => {
       return <Bookmark size={size} />
     case 'close':
       return <Close size={size} />
+    case 'hamburger':
+      return <Hamburger />
     case 'hide':
       return <Hide size={size} />
     case 'search':
