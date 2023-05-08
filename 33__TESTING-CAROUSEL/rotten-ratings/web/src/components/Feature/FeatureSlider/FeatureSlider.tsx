@@ -45,6 +45,7 @@ const FeatureSlider = ({ features }: FeatureSliderProps) => {
           {features.map((feature, index: number) => (
             <li key={index}>
               <button
+                data-testid={`slideNav-${index}`}
                 className={`block h-2 w-16 cursor-pointer  ${
                   currentSlide === index ? 'bg-tamarillo' : 'bg-montana'
                 }`}
