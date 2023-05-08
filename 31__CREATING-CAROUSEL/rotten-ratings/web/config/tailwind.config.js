@@ -19,6 +19,7 @@ module.exports = {
         tamarillo: '#911412' /* deep red */,
         eerieBlack: '#1e1e1e' /* almost black */,
         jet: '#353535' /* lighter - almost black rollover */,
+        montana: '#3A3A3A',
       },
       dropShadow: {
         poster: '0px 0px 4px rgba(0, 0, 0, 0.25)',
