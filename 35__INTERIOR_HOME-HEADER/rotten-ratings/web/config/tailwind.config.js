@@ -24,6 +24,9 @@ module.exports = {
       dropShadow: {
         poster: '0px 0px 4px rgba(0, 0, 0, 0.25)',
       },
+      maxWidth: {
+        pageWidth: '1280px',
+      },
     },
     fontFamily: {
       modern: ['Abril Fatface', 'cursive'],

@@ -12,7 +12,7 @@ interface SliderProps {
 const Slider = ({ label, slides, slideSize, viewAllLink }: SliderProps) => {
   return (
     <>
-      <div className="mx-auto flex max-w-[1300px] items-end justify-between pb-2">
+      <div className="mx-auto flex max-w-pageWidth items-end justify-between pb-2">
         <h2>{label}</h2>
         {viewAllLink && <Link to={viewAllLink}>View All</Link>}
       </div>
