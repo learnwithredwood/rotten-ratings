@@ -23,7 +23,11 @@
     @apply fill-current
   }
 }
-@layer components { }
+@layer components {
+  .nav-item {
+    @apply uppercase font-light text-3xl tracking-widest hover:text-lemonLime mb-10 last:mb-0
+  }
+}
 @layer utilities {
 .center {
     @apply flex items-center justify-center

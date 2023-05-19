@@ -35,4 +35,8 @@ export const slides = [
     alt: 'Dolphin Boy',
     src: 'https://www.themoviedb.org/t/p/w1280/gISoDEiaUH9BNEunmLC7FgUVaia.jpg',
   },
+  {
+    alt: 'The Super Mario Bros. Movie',
+    src: 'https://www.themoviedb.org/t/p/w1280/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg',
+  },
 ]
