@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@300;400;500;700&display=swap');
+
+/**
+ * START --- SETUP TAILWINDCSS EDIT
+ *
+ * `yarn rw setup ui tailwindcss` placed these imports here
+ * to inject Tailwind's styles into your CSS.
+ * For more information, see: https://tailwindcss.com/docs/installation#include-tailwind-in-your-css
+ */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/**
+ * END --- SETUP TAILWINDCSS EDIT
+ */
+
+@layer base {
+  body {
+    @apply text-white;
+  }
+
+  svg {
+    @apply fill-current
+  }
+}
+@layer components {
+  .nav-item {
+    @apply uppercase font-light text-3xl tracking-widest hover:text-lemonLime mb-10 last:mb-0
+  }
+}
+@layer utilities {
+.center {
+    @apply flex items-center justify-center
+  }
+}

@@ -1,0 +1,18 @@
+// See https://storybook.js.org/docs/react/writing-stories/args.
+
+import type { ComponentMeta } from '@storybook/react'
+
+import { ${pascalName}, type ${pascalName}Props } from './${pascalName}'
+
+export default {
+  title: 'Components/${pascalName}',
+  component: ${pascalName},
+} as ComponentMeta<typeof ${pascalName}>
+
+const Template = (args) => <${pascalName} {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  // args
+}
+
